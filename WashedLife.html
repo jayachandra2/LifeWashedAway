@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashedLife</title>
+    <script>
+        function birthDay(valueEntered){
+            var birthDate = new Date(valueEntered);
+            var presentDate = new Date();
+            var dBDates = presentDate.getTime() - birthDate.getTime();
+
+        }
+        function getDate(){
+            var enteredDate = document.getElementById('').value;
+            birthDay(enteredDate);
+        }
+    </script>
+    <style>
+        .outerDiv{
+            margin: 15vh 15vh 15vh 10vh;
+        }
+        .container{
+            background-color:navy;
+            display:grid;
+            grid-template-columns:25vh 25vh;
+            grid-template-rows:20vh 30vh;
+            grid-template-areas:".datepicker .datepicker"
+                                ".displayer .displayer"
+            
+        }
+        .datepicker{
+            grid-area:datepicker;
+            background-color:cyan;
+        }
+        .displayer{
+            grid-area:displayer;
+            background-color:bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerDiv">
+    <div class="container">
+        <div class="datepicker">
+        <input type="datetime" value="" id="dtpicker">
+          
+        </div>
+        <div class="displayer">
+            <input >
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
