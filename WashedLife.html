@@ -21,20 +21,18 @@
             margin: 20px;
         }
         .container{
-            background-color:navy;
-            display:grid;
-            grid-template-columns:1fr 1fr;
-            grid-template-rows:1fr 1fr;
-            grid-template-areas:".datepicker .displayer"
-                                ".datepicker .displayer"
-            
+           display:flex;
+           height:30vw;
+            width:30vh;
         }
         .datepicker{
-            grid-area:.datepicker;
+            height:15vw;
+            width:15vh;
             background-color:cyan;
         }
         .displayer{
-            grid-area:.displayer;
+            height:15vw;
+            width:15vh;
             background-color:bisque;
         }
     </style>
